@@ -1,4 +1,4 @@
-let socket = io.connect('localhost:3333');
+let socket = io.connect('http://www.scrooble.net');
 let root;
 let currNode;
 let currNodeParent;
