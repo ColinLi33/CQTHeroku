@@ -2,25 +2,30 @@
 <html>
 <head>
   <title>Chaos Question Tree</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2 class="textBox" id="topText"></h2>
+    <h2 class="gradient-multiline" id="topText"><span></span></h2>
 
-              <div class="buttons">
-                 <button onclick="checkYes()" id="yesButton">Yes</button>
-                 <button onclick="checkNo()" id="noButton">No</button>
-                 <input type="text"
-                  id="inputField"
-                  onkeydown="if (event.keyCode == 13)
-                  document.getElementById('submitButton').click()"
-                  value="">
-                 <button onclick="submit()" id="submitButton">Submit</button>
-                 <button onclick="startGame()" id="restartButton">Restart</button>
-              </div>
+    <div class="buttons">
+      <div class="yesbox">
+        <a href="#" onclick="checkYes()" id="yesButton" class="btn btn-white btn-animation-1">Yes</a>
+      </div>
+      <div class="nobox">
+        <a href="#" onclick="checkNo()" id="noButton" class="btn btn-white btn-animation-1">No</a>
+      </div>
+      <div class="nobox">
+        <a href="#" onclick="submit()" id="submitButton" class="btn btn-white btn-animation-1">Submit</a>
+      </div>
+      <div class="nobox">
+        <a href="#" onclick="startGame()" id="restartButton" class="btn btn-white btn-animation-1">Restart</a>
+      </div>
+    </div>
 
-
-
-
+    <div class="textBox">
+      <input type="text"id="inputField" onkeydown="if (event.keyCode == 13)
+      document.getElementById('submitButton').click()" value="">
+    </div>
 </body>
  <!--<script src="/socket.io/socket.io.js"></script>-->
  <script src="http://www.scrooble.net/socket.io/socket.io.js"></script>
